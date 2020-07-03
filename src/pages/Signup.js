@@ -34,6 +34,10 @@ const Signup = () => {
           email: res.user.email,
           uid: res.user.uid,
         });
+
+        toast(`Signup Successful and loggedin`, {
+          type: "success",
+        });
       })
       .catch((error) => {
         console.log(error);
