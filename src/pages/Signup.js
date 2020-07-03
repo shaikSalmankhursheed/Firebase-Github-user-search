@@ -53,10 +53,10 @@ const Signup = () => {
   return (
     <Container className="text-center">
       <Row>
-        <Col lg={6} className="offset-lg-3 mt-5">
+        <Col lg={6} className="offset-lg-3 mt-5 bg-success">
           <Card>
             <Form onSubmit={handleSubmit}>
-              <CardHeader className="">SignUp here</CardHeader>
+              <CardHeader>SignUp here</CardHeader>
               <CardBody>
                 <FormGroup row>
                   <Label for="email" sm={3}>
@@ -90,7 +90,7 @@ const Signup = () => {
                 </FormGroup>
               </CardBody>
               <CardFooter>
-                <Button type="submit" block color="primary">
+                <Button type="submit" block color="success">
                   Sign UP
                 </Button>
               </CardFooter>
